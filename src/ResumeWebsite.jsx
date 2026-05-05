@@ -138,7 +138,7 @@ const ResumeWebsite = () => {
                   {item}
                 </a>
               ))}
-              <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer">
+              <a href="/resume.pdf" download="Ezhil_Malar_M_Updated_Resume_Sithalapakkam.pdf" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer">
                 <Download size={16} />
                 Resume
               </a>
@@ -166,7 +166,7 @@ const ResumeWebsite = () => {
                   {item}
                 </a>
               ))}
-              <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center justify-center gap-2 cursor-pointer">
+              <a href="/resume.pdf" download="Ezhil_Malar_M_Updated_Resume_Sithalapakkam.pdf" className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center justify-center gap-2 cursor-pointer">
                 <Download size={16} />
                 Resume
               </a>
@@ -195,7 +195,7 @@ const ResumeWebsite = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-md cursor-pointer">
+            <a href="/resume.pdf" download="Ezhil_Malar_M_Updated_Resume_Sithalapakkam.pdf" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-md cursor-pointer">
               <Download size={20} />
               Download Resume
             </a>
