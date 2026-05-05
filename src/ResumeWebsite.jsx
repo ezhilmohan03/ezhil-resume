@@ -61,6 +61,18 @@ const ResumeWebsite = () => {
     strengths: {
       keywords: ['strength', 'soft skills', 'qualities', 'characteristics'],
       response: "Her key strengths include: Good listener, Hard worker, Willingness to learn, Team facilitator, Adaptable to new technologies, Strong academic discipline, and Detail-oriented & organized."
+    },
+    teaching: {
+      keywords: ['teaching', 'experience', 'tutor', 'educator', 'xseed', 'pedagogy', 'prasan'],
+      response: "Ezhil has 3 years of teaching experience at Prasan Vidhaya Bala Mandhir using the XSEED pedagogical framework, which emphasizes structured, process-driven education. She also continues freelance tutoring. This background gives her strong skills in documentation, SOP adherence, clear communication, and adaptability—all highly valuable for IT support and automation roles."
+    },
+    sop: {
+      keywords: ['sop', 'standard operating procedure', 'documentation', 'process', 'workflow'],
+      response: "Her teaching background with XSEED has given her strong expertise in following and creating Standard Operating Procedures (SOPs), process documentation, and structured workflows. She understands the importance of clear documentation and consistent process execution—critical for IT operations and automation support."
+    },
+    communication: {
+      keywords: ['communication', 'teach', 'explain', 'support', 'training'],
+      response: "Her teaching experience demonstrates exceptional communication and training skills. She can break down complex concepts, support diverse learners, and provide clear explanations—abilities directly applicable to IT support, user training, and automation implementation roles where explaining technical processes to non-technical users is essential."
     }
   };
 
@@ -126,10 +138,10 @@ const ResumeWebsite = () => {
                   {item}
                 </a>
               ))}
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2">
+              <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer">
                 <Download size={16} />
                 Resume
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -154,10 +166,10 @@ const ResumeWebsite = () => {
                   {item}
                 </a>
               ))}
-              <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center justify-center gap-2">
+              <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center justify-center gap-2 cursor-pointer">
                 <Download size={16} />
                 Resume
-              </button>
+              </a>
             </div>
           )}
         </div>
@@ -183,10 +195,10 @@ const ResumeWebsite = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <button className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-md">
+            <a href="/resume.pdf" download="Ezhil_Malar_M_Resume.pdf" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-md cursor-pointer">
               <Download size={20} />
               Download Resume
-            </button>
+            </a>
             <button
               onClick={() => setChatOpen(true)}
               className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-md"
@@ -215,7 +227,10 @@ const ResumeWebsite = () => {
                 Ezhil Malar M is a technology graduate with an MCA and B.Sc in Software Application, known for strong academic performance, university ranking, and a consistent willingness to learn. She has foundational knowledge in programming, databases, design tools, and operating systems.
               </p>
               <p className="text-lg text-slate-200 leading-relaxed">
-                She is now expanding into modern workplace technologies such as LLM tools, Generative AI, Microsoft Power Platform, RPA, and workflow automation—positioning herself as a capable professional for automation-focused, AI-assisted, and digital operations roles.
+                With <strong>3 years of teaching experience at Prasan Vidhaya Bala Mandhir</strong> utilizing the <strong>XSEED pedagogical framework</strong>, she has demonstrated exceptional skills in structured communication, process documentation, and adaptability to diverse learning needs. She combines this with <strong>ongoing freelance tutoring experience</strong>, showcasing her ability to work independently and manage multiple responsibilities simultaneously.
+              </p>
+              <p className="text-lg text-slate-200 leading-relaxed">
+                She is now expanding into modern workplace technologies such as LLM tools, Generative AI, Microsoft Power Platform, RPA, and workflow automation—positioning herself as a capable professional for automation-focused, AI-assisted, and digital operations roles. Her teaching background provides a strong foundation in following standard operating procedures, training delivery, and user support.
               </p>
               <p className="text-lg text-slate-200 leading-relaxed">
                 Her career objective is to grow with an organization and become a reputed professional by effectively contributing to business goals through technology, continuous learning, automation, and digital transformation.
@@ -243,6 +258,65 @@ const ResumeWebsite = () => {
                   <p className="text-sm text-slate-300">Continuous learning mindset</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Work Experience Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-slate-900">Professional Experience</h2>
+          <div className="space-y-6">
+            {[
+              {
+                role: 'Teaching Professional & Pedagogy Specialist',
+                organization: 'Prasan Vidhaya Bala Mandhir',
+                duration: '3 Years',
+                details: [
+                  'Specialized training in XSEED pedagogical framework—a structured, process-driven teaching methodology',
+                  'Demonstrated proficiency in curriculum delivery, student assessment, and adaptive teaching strategies',
+                  'Strong experience in documentation, standard operating procedures (SOPs), and structured communication',
+                  'Managed classroom operations, resource allocation, and individualized learning support'
+                ]
+              },
+              {
+                role: 'Freelance Tutor',
+                organization: 'Self-Employed | Ongoing',
+                duration: 'Till Date',
+                details: [
+                  'Independent management of tutoring clients and scheduling',
+                  'Personalized curriculum design and student progress tracking',
+                  'Flexible problem-solving and adaptability to diverse learning styles',
+                  'Client relationship management and performance reporting'
+                ]
+              }
+            ].map((job, idx) => (
+              <div key={idx} className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <div className="flex justify-between items-start mb-3">
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900">{job.role}</h3>
+                    <p className="text-blue-700 font-semibold">{job.organization}</p>
+                  </div>
+                  <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-semibold">
+                    {job.duration}
+                  </span>
+                </div>
+                <ul className="space-y-2">
+                  {job.details.map((detail, didx) => (
+                    <li key={didx} className="text-slate-700 flex items-start gap-3">
+                      <span className="text-blue-600 mt-1 font-bold">•</span>
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div className="bg-green-50 border-l-4 border-green-600 rounded-lg p-6 mt-6">
+              <h4 className="font-bold text-slate-900 mb-2">🎓 Why Teaching Experience Matters for IT Support Roles:</h4>
+              <p className="text-slate-700 leading-relaxed">
+                Teaching experience with XSEED pedagogy directly translates to IT support and digital operations excellence: structured problem-solving (SOP adherence), clear communication with diverse users, patience with technical learners, documentation skills, and the ability to break down complex processes into understandable steps—core competencies for IT support, automation training, and user enablement.
+              </p>
             </div>
           </div>
         </div>
@@ -311,6 +385,11 @@ const ResumeWebsite = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
+              {
+                category: 'Teaching & Pedagogy',
+                level: 'Expert',
+                skills: ['XSEED Framework', 'Curriculum Design', 'Process Documentation', 'SOP Development', 'Student Assessment']
+              },
               {
                 category: 'Programming Fundamentals',
                 level: 'Foundation',
@@ -464,6 +543,7 @@ const ResumeWebsite = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
+              { name: 'XSEED Pedagogy', icon: '🎓' },
               { name: 'Adobe Photoshop', icon: '🎨' },
               { name: 'Adobe PageMaker', icon: '📄' },
               { name: 'CorelDraw', icon: '✏️' },
@@ -517,14 +597,16 @@ const ResumeWebsite = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              'AI-assisted Business Operations',
+              'IT User Support & Help Desk (leveraging teaching communication skills)',
+              'Application Support & Technical Training',
               'Automation Support & Administration',
               'Power Platform-based Workflow Solutions',
               'RPA Process Automation',
-              'Junior Application Support',
-              'Data & Reporting Support',
-              'Digital Productivity Improvement',
-              'IT Support & Operations'
+              'SOP Documentation & Process Optimization',
+              'Digital Operations & Workflow Improvement',
+              'User Enablement & Technical Onboarding',
+              'AI-assisted Business Operations',
+              'Data & Reporting Support'
             ].map((role, idx) => (
               <div key={idx} className="flex items-center gap-3 bg-white/20 rounded-lg p-4">
                 <ChevronDown size={20} className="flex-shrink-0" />
