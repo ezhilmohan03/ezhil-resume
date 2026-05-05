@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, Mail, Phone, MapPin, MessageCircle, Send, ChevronDown, Award, BookOpen, Code, Zap, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X, Download, Mail, Phone, MapPin, MessageCircle, Send, ChevronDown, Award, BookOpen, Zap } from 'lucide-react';
 
 const ResumeWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,7 +69,7 @@ const ResumeWebsite = () => {
   const findResponse = (userMessage) => {
     const lowerMsg = userMessage.toLowerCase();
 
-    for (const [key, data] of Object.entries(chatbotKB)) {
+    for (const data of Object.values(chatbotKB)) {
       if (data.keywords.some(keyword => lowerMsg.includes(keyword))) {
         return data.response;
       }
