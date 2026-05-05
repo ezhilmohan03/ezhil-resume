@@ -48,7 +48,7 @@ const ResumeWebsite = () => {
     },
     contact: {
       keywords: ['contact', 'email', 'phone', 'reach', 'location'],
-      response: "You can reach Ezhil at: Email: ezhilmohan03@gmail.com | Phone: 9944036713 | Location: Thirukkalukundram, Kanchipuram District, Tamil Nadu."
+      response: "You can reach Ezhil at: Email: ezhilmohan03@gmail.com | Phone: 9944036713 | Location: Sithalapakkam, Chengalpattu District, Tamil Nadu."
     },
     languages: {
       keywords: ['language', 'speak', 'tamil', 'english'],
@@ -639,7 +639,7 @@ const ResumeWebsite = () => {
               {
                 icon: MapPin,
                 label: 'Location',
-                value: 'Thirukkalukundram, Kanchipuram District, Tamil Nadu',
+                value: 'Sithalapakkam, Chengalpattu District, Tamil Nadu',
                 href: '#'
               }
             ].map((contact, idx) => {
